@@ -90,7 +90,6 @@ def error():
 def a_stein():
     global du
     your_selection.config(image=imageListe[1])
-    print("Stein")
     du="Stein"
     run_game()
 
@@ -99,14 +98,12 @@ def a_papier():
     global du
     your_selection.config(image=imageListe[0])
     du="Papier"
-    print("papier")
     run_game()
 
 def a_schere():
     your_selection.config(image=imageListe[2])
     global du
     du="Schere"
-    print("SCHERE")
     run_game()
 
 
@@ -120,13 +117,13 @@ def draw_ui(gegnger_label):
     global your_selection
     global feedback
     imageListe = [
-        PhotoImage(file='papier.gif'),
-        PhotoImage(file='stein.gif'),
-        PhotoImage(file='schere.gif'),
-        PhotoImage(file="question_mark.png"),
-        PhotoImage(file="win.png"),
-        PhotoImage(file="lose.png"),
-        PhotoImage(file="tie.png")
+        PhotoImage(file='img//papier.gif'),
+        PhotoImage(file='img//stein.gif'),
+        PhotoImage(file='img//schere.gif'),
+        PhotoImage(file="img//question_mark.png"),
+        PhotoImage(file="img//win.png"),
+        PhotoImage(file="img//lose.png"),
+        PhotoImage(file="img//tie.png")
     ]
 
     Schere_button = Button(fenster, image=imageListe[2], command=a_schere)
