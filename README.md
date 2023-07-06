@@ -4,4 +4,7 @@
 - python
 
 ## Start the game
-- `python gampe.py`
+- `python game.py`
+
+## Build .exe
+- `Auto Py to Exe`
